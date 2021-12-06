@@ -1,6 +1,6 @@
 package com.benbenlaw.essence.block;
 
-import com.benbenlaw.essence.essence;
+import com.benbenlaw.essence.Essence;
 import com.benbenlaw.essence.item.ModCreativeModTab;
 import com.benbenlaw.essence.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -17,7 +17,7 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, essence.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, Essence.MOD_ID);
 //New Blocks
 
     public static final RegistryObject<Block> BASIC_ESSENCE_BLOCK = registerBlock("basic_essence_block",

@@ -1,6 +1,6 @@
 package com.benbenlaw.essence.item;
 
-import com.benbenlaw.essence.essence;
+import com.benbenlaw.essence.Essence;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -9,7 +9,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, essence.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, Essence.MOD_ID);
 
     public static final RegistryObject<Item> BASIC_MOB_ESSENCE = ITEMS.register("basic_mob_essence", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.ESSENCE)));

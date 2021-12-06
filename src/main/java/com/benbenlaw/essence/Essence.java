@@ -20,15 +20,15 @@ import java.util.stream.Collectors;
 //test
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(essence.MOD_ID)
-public class essence {
+@Mod(Essence.MOD_ID)
+public class Essence {
 
     public static final String MOD_ID = "essence";
 
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public essence() {
+    public Essence() {
 
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 

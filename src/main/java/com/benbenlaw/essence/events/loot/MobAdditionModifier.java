@@ -36,7 +36,7 @@ public class MobAdditionModifier extends LootModifier {
     public static class Serializer extends GlobalLootModifierSerializer<MobAdditionModifier> {
 
         @Override
-        public MobAdditionModifier read(ResourceLocation name, JsonObject object, LootItemCondition[] conditionsIn) {
+        public MobAdditionModifier read(ResourceLocation location, JsonObject object, LootItemCondition[] conditionsIn) {
             Item addition = ForgeRegistries.ITEMS.getValue(
                     new ResourceLocation(GsonHelper.getAsString(object, "addition")));
             return new MobAdditionModifier(conditionsIn, addition);
@@ -46,7 +46,7 @@ public class MobAdditionModifier extends LootModifier {
         public JsonObject write(MobAdditionModifier instance) {
             JsonObject json = makeConditions(instance.conditions);
             json.addProperty("addition", ForgeRegistries.ITEMS.getKey(instance.addition).toString());
-            return json;
+            return new JsonObject();
         }
     }
 }
