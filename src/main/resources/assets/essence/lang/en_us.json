@@ -1,0 +1,9 @@
+{
+  "item.essence.basic_mob_essence": "Basic Mob Essence",
+  "item.essence.advanced_mob_essence": "Advanced Mob Essence",
+  "item.essence.elite_mob_essence": "Elite Mob Essence",
+
+  "block.essence.basic_essence_block": "Basic Essence Block",
+
+  "itemGroup.Essence": "Essence"
+}
