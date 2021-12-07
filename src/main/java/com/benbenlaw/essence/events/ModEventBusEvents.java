@@ -19,9 +19,84 @@ public class ModEventBusEvents {
 
 //Basic Mob Essence
 
-            new MobAdditionModifier.Serializer().setRegistryName
-                   (new ResourceLocation("essence","cave_spider"))
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/cave_spider")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/creeper")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/drowned")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/guardian")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/phantom")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/pillager")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/silverfish")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/skeleton")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/slime")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/spider")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/stray")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/witch")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/zombie")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/endermite")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/husk")),
+
+//Advanced Mob Essence
+
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/hoglin")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/evoker")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/enderman")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/blaze")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/magma_cube")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/ghast")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/ravager")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/piglin_brute")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/piglin")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/shulker")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/vex")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/wither_skeleton")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/zoglin")),
+                new MobAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(Essence.MOD_ID,"minecraft/zombiefied_piglin"))
+
+
         );
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

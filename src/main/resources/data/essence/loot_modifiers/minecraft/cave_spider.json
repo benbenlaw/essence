@@ -5,6 +5,6 @@
       "loot_table_id": "minecraft:entities/cave_spider"
     }
   ],
-  "addition": "techopolis:advanced_mob_essence",
-  "type": "test:test"
+  "addition": "essence:basic_mob_essence",
+  "type": "essence:minecraft/cave_spider"
 }
