@@ -3,7 +3,8 @@
   "item.essence.advanced_mob_essence": "Advanced Mob Essence",
   "item.essence.elite_mob_essence": "Elite Mob Essence",
 
-  "block.essence.basic_essence_block": "Basic Essence Block",
+  "block.essence.basic_mob_essence_block": "Basic Mob Essence Block",
+  "block.essence.advanced_mob_essence_block": "Advanced Mob Essence Block",
 
   "itemGroup.Essence": "Essence"
 }

@@ -1,5 +1,6 @@
 package com.benbenlaw.essence.events.loot;
 
+import com.benbenlaw.essence.config.ConfigFile;
 import com.google.gson.JsonObject;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.GsonHelper;
@@ -27,7 +28,7 @@ public class MobAdditionModifier extends LootModifier {
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
         // generatedLoot is the loot that would be dropped, if we wouldn't add or replace
         // anything!
-        if(context.getRandom().nextFloat() > 0) { //0.75
+        if(context.getRandom().nextDouble() > ConfigFile.mobEssenceChance.get()) { //0.75
             generatedLoot.add(new ItemStack(addition, 1));
         }
         return generatedLoot;

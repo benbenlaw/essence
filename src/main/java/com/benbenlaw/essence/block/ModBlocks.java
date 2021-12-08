@@ -20,7 +20,10 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, Essence.MOD_ID);
 //New Blocks
 
-    public static final RegistryObject<Block> BASIC_ESSENCE_BLOCK = registerBlock("basic_essence_block",
+    public static final RegistryObject<Block> BASIC_MOB_ESSENCE_BLOCK = registerBlock("basic_mob_essence_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f)));
+
+    public static final RegistryObject<Block> ADVANCED_MOB_ESSENCE_BLOCK = registerBlock("advanced_mob_essence_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f)));
 
 

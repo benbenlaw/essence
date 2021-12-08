@@ -7,10 +7,10 @@
   ],
   "key": {
     "X": {
-      "item": "essence:basic_mob_essence"
+      "item": "essence:advanced_mob_essence"
     }
   },
   "result": {
-    "item": "essence:basic_mob_essence_block"
+    "item": "essence:advanced_mob_essence_block"
   }
 }
