@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SXS",
+    "XIX",
+    "SXS"
+  ],
+  "key": {
+    "X": {
+      "item": "essence:basic_ore_essence"
+    },
+    "I": {
+      "item": "minecraft:copper_ingot"
+    },
+    "S": {
+      "item": "minecraft:stone"
+    }
+  },
+  "result": {
+    "item": "minecraft:copper_ore",
+    "count": 3
+  }
+}

@@ -31,10 +31,14 @@
     "essence:minecraft/vindicator",
     "essence:minecraft/wither_skeleton",
     "essence:minecraft/zoglin",
-    "essence:minecraft/zombiefied_piglin"
+    "essence:minecraft/zombiefied_piglin",
 
 
 
+    "essence:ores/iron",
+    "essence:ores/deepslate_iron",
+    "essence:ores/copper",
+    "essence:ores/deepslate_copper"
 
 
 

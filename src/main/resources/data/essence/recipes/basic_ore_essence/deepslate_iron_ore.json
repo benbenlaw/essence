@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SXS",
+    "XIX",
+    "SXS"
+  ],
+  "key": {
+    "X": {
+      "item": "essence:basic_ore_essence"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:deepslate"
+    }
+  },
+  "result": {
+    "item": "minecraft:deepslate_iron_ore",
+    "count": 3
+  }
+}

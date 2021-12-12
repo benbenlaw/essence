@@ -6,6 +6,8 @@ import com.benbenlaw.essence.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,13 +20,16 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Essence.MOD_ID);
+
+
+
 //New Blocks
 
     public static final RegistryObject<Block> BASIC_MOB_ESSENCE_BLOCK = registerBlock("basic_mob_essence_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(2f)));
 
     public static final RegistryObject<Block> ADVANCED_MOB_ESSENCE_BLOCK = registerBlock("advanced_mob_essence_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(2f)));
 
 
 

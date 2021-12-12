@@ -17,6 +17,14 @@ public class ModItems {
     public static final RegistryObject<Item> ADVANCED_MOB_ESSENCE = ITEMS.register("advanced_mob_essence", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
 
+
+
+    public static final RegistryObject<Item> BASIC_ORE_ESSENCE = ITEMS.register("basic_ore_essence", () -> new Item(
+            new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
+
+
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
