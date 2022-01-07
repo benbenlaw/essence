@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    "E#E",
+    " E "
+  ],
+  "key": {
+    "E": {
+      "item": "essence:basic_ore_essence"
+    },
+    "#": {
+      "item": "minecraft:copper"
+    }
+  },
+  "result": {
+    "item": "minecraft:copper",
+    "count": 3
+  }
+}
