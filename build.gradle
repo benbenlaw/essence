@@ -12,7 +12,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 
 group = 'com.benbenlaw.essence'
-version = '1.18-2.0'
+version = '1.18-3.0'
 
 java {
     archivesBaseName = 'essence'

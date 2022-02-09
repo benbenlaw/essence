@@ -18,7 +18,10 @@ import javax.annotation.Nonnull;
 
 @Mod.EventBusSubscriber(modid = Essence.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 
-public class ModEventBusEvents {
+public class ModEventBusEvents {}
+
+/*
+{
 
     @SubscribeEvent
     public static void registerModifierSerializers(@Nonnull final RegistryEvent.Register<GlobalLootModifierSerializer<?>>event) {
@@ -107,6 +110,7 @@ public class ModEventBusEvents {
         );
     }
 }
+*/
 
 
 

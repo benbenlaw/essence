@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "EIE",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "essence:elite_mob_essence"
+    },
+    "I": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "minecraft:nether_star",
+    "count": 2
+  }
+}
