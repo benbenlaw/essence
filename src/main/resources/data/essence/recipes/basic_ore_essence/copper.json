@@ -10,11 +10,11 @@
       "item": "essence:basic_ore_essence"
     },
     "#": {
-      "item": "minecraft:copper"
+      "item": "minecraft:copper_ingot"
     }
   },
   "result": {
-    "item": "minecraft:copper",
+    "item": "minecraft:copper_ingot",
     "count": 3
   }
 }
