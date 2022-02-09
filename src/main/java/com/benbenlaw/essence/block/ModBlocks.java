@@ -29,7 +29,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(2f)));
 
     public static final RegistryObject<Block> ADVANCED_MOB_ESSENCE_BLOCK = registerBlock("advanced_mob_essence_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(2f)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(2.5f)));
+
+    public static final RegistryObject<Block> ELITE_MOB_ESSENCE_BLOCK = registerBlock("elite_mob_essence_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f)));
 
 
 
