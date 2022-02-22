@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mysticalagriculture"
+    }
+  ],
+  "pattern": [
+    " E ",
+    "E#E",
+    " E "
+  ],
+  "key": {
+    "#": {
+      "item": "mysticalagriculture:soulium_dust"
+    },
+    "E": {
+      "item": "essence:basic_ore_essence"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:soulium_dust",
+    "count": 5
+  }
+}

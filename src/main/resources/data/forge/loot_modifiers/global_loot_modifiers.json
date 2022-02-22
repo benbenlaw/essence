@@ -1,45 +1,7 @@
 {
   "replace": false,
   "entries": [
-    "essence:minecraft/cave_spider",
-    "essence:minecraft/silverfish",
-    "essence:minecraft/skeleton",
-    "essence:minecraft/spider",
-    "essence:minecraft/pillager",
-    "essence:minecraft/slime",
-    "essence:minecraft/phantom",
-    "essence:minecraft/witch",
-    "essence:minecraft/zombie",
-    "essence:minecraft/stray",
-    "essence:minecraft/creeper",
-    "essence:minecraft/drowned",
-    "essence:minecraft/guardian",
-    "essence:minecraft/husk",
-    "essence:minecraft/silverfish",
-
-    "essence:minecraft/blaze",
-    "essence:minecraft/enderman",
-    "essence:minecraft/evoker",
-    "essence:minecraft/ghast",
-    "essence:minecraft/magma_cube",
-    "essence:minecraft/hoglin",
-    "essence:minecraft/piglin",
-    "essence:minecraft/piglin_brute",
-    "essence:minecraft/ravager",
-    "essence:minecraft/shulker",
-    "essence:minecraft/vex",
-    "essence:minecraft/vindicator",
-    "essence:minecraft/wither_skeleton",
-    "essence:minecraft/zoglin",
-    "essence:minecraft/zombiefied_piglin",
-
-
-
-    "essence:ores/iron",
-    "essence:ores/deepslate_iron",
-    "essence:ores/copper",
-    "essence:ores/deepslate_copper"
-
+    "essence:spawner"
 
 
 

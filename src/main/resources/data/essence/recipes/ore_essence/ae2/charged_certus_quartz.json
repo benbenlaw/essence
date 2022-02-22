@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "ae2"
+    }
+  ],
+  "pattern": [
+    " E ",
+    "E#E",
+    " E "
+  ],
+  "key": {
+    "#": {
+      "item": "ae2:charged_certus_quartz_crystal"
+    },
+    "E": {
+      "item": "essence:elite_ore_essence"
+    }
+  },
+  "result": {
+    "item": "ae2:charged_certus_quartz_crystal",
+    "count": 2
+  }
+}

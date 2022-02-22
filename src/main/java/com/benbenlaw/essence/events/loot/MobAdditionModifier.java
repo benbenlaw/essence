@@ -15,7 +15,11 @@ import net.minecraftforge.registries.ForgeRegistries;
 import javax.annotation.Nonnull;
 import java.util.List;
 
-public class MobAdditionModifier extends LootModifier {
+/*
+
+public class MobAdditionModifier extends LootModifier {}
+
+
     private final Item addition;
 
     protected MobAdditionModifier(LootItemCondition[] conditionsIn, Item addition) {
@@ -51,3 +55,6 @@ public class MobAdditionModifier extends LootModifier {
         }
     }
 }
+
+*/
+

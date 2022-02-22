@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rftoolsbase"
+    }
+  ],
+  "pattern": [
+    " E ",
+    "E#E",
+    " E "
+  ],
+  "key": {
+    "E": {
+      "item": "essence:elite_ore_essence"
+    },
+    "#": {
+      "item": "rftoolsbase:dimensionalshard"
+    }
+  },
+  "result": {
+    "item": "rftoolsbase:dimensionalshard",
+    "count": 2
+  }
+}

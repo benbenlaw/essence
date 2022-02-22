@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ],
+  "pattern": [
+    " E ",
+    "E#E",
+    " E "
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/platinum"
+    },
+    "E": {
+      "item": "essence:elite_ore_essence"
+    }
+  },
+  "result": {
+    "item": "alltheores:platinum_ingot",
+    "count": 2
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "silentgems"
+    }
+  ],
+  "pattern": [
+    " E ",
+    "E#E",
+    " E "
+  ],
+  "key": {
+    "E": {
+      "item": "essence:basic_ore_essence"
+    },
+    "#": {
+      "item": "silentgear:bort"
+    }
+  },
+  "result": {
+    "item": "silentgear:bort",
+    "count": 4
+  }
+}

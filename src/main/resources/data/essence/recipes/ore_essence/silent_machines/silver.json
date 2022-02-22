@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "silentgems"
+    }
+  ],
+  "pattern": [
+    " E ",
+    "E#E",
+    " E "
+  ],
+  "key": {
+    "E": {
+      "item": "essence:advanced_ore_essence"
+    },
+    "#": {
+      "item": "silentgems:silver_ingot"
+    }
+  },
+  "result": {
+    "item": "silentgems:silver_ingot",
+    "count": 3
+  }
+}

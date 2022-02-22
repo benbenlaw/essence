@@ -7,6 +7,10 @@
   "item.essence.advanced_ore_essence": "Advanced Ore Essence",
   "item.essence.elite_ore_essence": "Elite Ore Essence",
 
+  "item.essence.activated_spawner_shard": "Activated Spawner Shard",
+  "item.essence.spawner_shard": "Spawner Shard",
+
+
   "block.essence.basic_mob_essence_block": "Basic Mob Essence Block",
   "block.essence.advanced_mob_essence_block": "Advanced Mob Essence Block",
   "block.essence.elite_mob_essence_block": "Elite Mob Essence Block",

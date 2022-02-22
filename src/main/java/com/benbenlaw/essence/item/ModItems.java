@@ -20,6 +20,12 @@ public class ModItems {
     public static final RegistryObject<Item> ELITE_MOB_ESSENCE = ITEMS.register("elite_mob_essence", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
 
+    public static final RegistryObject<Item> ACTIVATED_SPAWNER_SHARD = ITEMS.register("activated_spawner_shard", () -> new Item(
+            new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
+
+    public static final RegistryObject<Item> SPAWNER_SHARD = ITEMS.register("spawner_shard", () -> new Item(
+            new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
+
 
 
     public static final RegistryObject<Item> BASIC_ORE_ESSENCE = ITEMS.register("basic_ore_essence", () -> new Item(

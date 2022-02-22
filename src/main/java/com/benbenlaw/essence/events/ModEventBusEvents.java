@@ -1,27 +1,17 @@
 package com.benbenlaw.essence.events;
 
 import com.benbenlaw.essence.Essence;
-import com.benbenlaw.essence.events.loot.MobAdditionModifier;
-import com.benbenlaw.essence.events.loot.OreAdditionModifier;
-import net.minecraft.data.loot.BlockLoot;
+import com.benbenlaw.essence.events.loot.SpawnerAdditionModifier;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
-import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.registries.ForgeRegistries;
-
 import javax.annotation.Nonnull;
 
 @Mod.EventBusSubscriber(modid = Essence.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 
-public class ModEventBusEvents {}
-
-/*
-{
+public class ModEventBusEvents {
 
     @SubscribeEvent
     public static void registerModifierSerializers(@Nonnull final RegistryEvent.Register<GlobalLootModifierSerializer<?>>event) {
@@ -29,6 +19,10 @@ public class ModEventBusEvents {}
 
 //Basic Mob Essence
 
+        new SpawnerAdditionModifier.Serializer().setRegistryName
+                (new ResourceLocation(Essence.MOD_ID,"spawner"))
+
+/*
         new MobAdditionModifier.Serializer().setRegistryName
                 (new ResourceLocation(Essence.MOD_ID,"minecraft/cave_spider")),
         new MobAdditionModifier.Serializer().setRegistryName
@@ -107,10 +101,13 @@ public class ModEventBusEvents {}
         new OreAdditionModifier.Serializer().setRegistryName
                 (new ResourceLocation(Essence.MOD_ID,"ores/deepslate_copper"))
 
+
+
+ */
+
         );
     }
 }
-*/
 
 
 

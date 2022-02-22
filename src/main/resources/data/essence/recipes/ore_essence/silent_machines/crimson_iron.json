@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "silentgems"
+    }
+  ],
+  "pattern": [
+    " E ",
+    "E#E",
+    " E "
+  ],
+  "key": {
+    "E": {
+      "item": "essence:advanced_ore_essence"
+    },
+    "#": {
+      "item": "silentgear:crimson_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "silentgear:crimson_iron_ingot",
+    "count": 3
+  }
+}

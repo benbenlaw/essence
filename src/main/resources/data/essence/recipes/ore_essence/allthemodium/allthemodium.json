@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "allthemodium"
+    }
+  ],
+  "pattern": [
+    " E ",
+    "E#E",
+    " E "
+  ],
+  "key": {
+    "E": {
+      "item": "essence:elite_ore_essence"
+    },
+    "#": {
+      "item": "allthemodium:allthemodium_ingot"
+    }
+  },
+  "result": {
+    "item": "allthemodium:allthemodium_ingot",
+    "count": 2
+  }
+}

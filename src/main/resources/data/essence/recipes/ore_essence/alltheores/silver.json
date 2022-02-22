@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "alltheores"
+    }
+  ],
+  "pattern": [
+    " E ",
+    "E#E",
+    " E "
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:ingots/silver"
+    },
+    "E": {
+      "item": "essence:advanced_ore_essence"
+    }
+  },
+  "result": {
+    "item": "alltheores:silver_ingot",
+    "count": 3
+  }
+}
