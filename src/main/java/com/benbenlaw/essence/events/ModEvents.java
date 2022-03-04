@@ -34,6 +34,8 @@ public class ModEvents {
         }
     }
 
+    /*
+
     @SubscribeEvent
     public static void addBasicEssenceToBasicOres(BlockEvent.BreakEvent event) {
         if (!event.getPlayer().level.isClientSide) {
@@ -95,5 +97,7 @@ public class ModEvents {
                     new ItemStack(ModItems.BASIC_MOB_ESSENCE.get())));
         }
     }
+
+     */
 }
 

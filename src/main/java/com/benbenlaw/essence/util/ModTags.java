@@ -10,6 +10,8 @@ import net.minecraftforge.common.Tags;
 
 public class ModTags {
 
+/*
+
     public static class Blocks {
         public static final Tags.IOptionalNamedTag<Block> BASIC_ORES
                 = tag("basic_ores");
@@ -35,4 +37,6 @@ public class ModTags {
             return ItemTags.createOptional(new ResourceLocation("forge", name));
         }
     }
+
+ */
 }
