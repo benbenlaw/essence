@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "undergarden"
+    }
+  ],
+  "pattern": [
+    " E ",
+    "E#E",
+    " E "
+  ],
+  "key": {
+    "#": {
+      "item": "undergarden:brute_tusk"
+    },
+    "E": {
+      "item": "essence:advanced_mob_essence"
+    }
+  },
+  "result": {
+    "item": "undergarden:brute_tusk",
+    "count": 3
+  }
+}

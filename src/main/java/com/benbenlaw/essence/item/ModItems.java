@@ -21,9 +21,12 @@ public class ModItems {
             new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
 
     public static final RegistryObject<Item> ACTIVATED_SPAWNER_SHARD = ITEMS.register("activated_spawner_shard", () -> new Item(
-            new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
+            new Item.Properties().tab(ModCreativeModTab.ESSENCE).fireResistant()));
 
     public static final RegistryObject<Item> SPAWNER_SHARD = ITEMS.register("spawner_shard", () -> new Item(
+            new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
+
+    public static final RegistryObject<Item> LIGHTNING_SUMMONER = ITEMS.register("lighning_summoner", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
 
 

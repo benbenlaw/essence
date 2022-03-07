@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "undergarden"
+    }
+  ],
+  "pattern": [
+    " E ",
+    "E#E",
+    " E "
+  ],
+  "key": {
+    "E": {
+      "item": "essence:elite_ore_essence"
+    },
+    "#": {
+      "item": "undergarden:regalium_crystal"
+    }
+  },
+  "result": {
+    "item": "undergarden:regalium_crystal",
+    "count": 3
+  }
+}

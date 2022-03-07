@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "undergarden"
+    }
+  ],
+  "pattern": [
+    " E ",
+    "E#E",
+    " E "
+  ],
+  "key": {
+    "#": {
+      "item": "undergarden:raw_gloomper_leg"
+    },
+    "E": {
+      "item": "essence:basic_mob_essence"
+    }
+  },
+  "result": {
+    "item": "undergarden:raw_gloomper_leg",
+    "count": 3
+  }
+}

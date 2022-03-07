@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "XIX",
+    " X "
+  ],
+  "key": {
+    "X": {
+      "item": "essence:basic_mob_essence"
+    },
+    "I": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "minecraft:leather",
+    "count": 4
+  }
+}
