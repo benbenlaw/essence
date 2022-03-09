@@ -9,11 +9,15 @@
 
   "item.essence.activated_spawner_shard": "Activated Spawner Shard",
   "item.essence.spawner_shard": "Spawner Shard",
+  "item.essence.lightning_water_bucket": "Lightning Water Bucket",
 
 
   "block.essence.basic_mob_essence_block": "Basic Mob Essence Block",
   "block.essence.advanced_mob_essence_block": "Advanced Mob Essence Block",
   "block.essence.elite_mob_essence_block": "Elite Mob Essence Block",
+  "block.essence.solid_lightning_water_block": "Solid Lightning Water Block",
+
+  "fluid.essence.lightning_water": "Lighting Water",
 
   "itemGroup.essence": "Essence"
 }

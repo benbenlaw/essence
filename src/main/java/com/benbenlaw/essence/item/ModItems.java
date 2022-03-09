@@ -1,6 +1,8 @@
 package com.benbenlaw.essence.item;
 
 import com.benbenlaw.essence.Essence;
+import com.benbenlaw.essence.fluid.ModFluids;
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -27,7 +29,7 @@ public class ModItems {
             new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
 
     public static final RegistryObject<Item> LIGHTNING_SUMMONER = ITEMS.register("lighning_summoner", () -> new Item(
-            new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
+            new Item.Properties().tab(ModCreativeModTab.ESSENCE).stacksTo(1)));
 
 
 
@@ -39,6 +41,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> ELITE_ORE_ESSENCE = ITEMS.register("elite_ore_essence", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
+
+    public static final RegistryObject<Item> LIGHTNING_WATER_BUCKET = ITEMS.register("lightning_water_bucket", () -> new BucketItem(
+            () -> ModFluids.LIGHTNING_WATER_SOURCE.get(),
+            new Item.Properties().tab(ModCreativeModTab.ESSENCE).stacksTo(1)));
 
 
 

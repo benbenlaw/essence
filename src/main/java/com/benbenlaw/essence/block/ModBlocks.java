@@ -3,9 +3,12 @@ package com.benbenlaw.essence.block;
 import com.benbenlaw.essence.Essence;
 import com.benbenlaw.essence.item.ModCreativeModTab;
 import com.benbenlaw.essence.item.ModItems;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.LiquidBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -15,6 +18,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -34,10 +38,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> ELITE_MOB_ESSENCE_BLOCK = registerBlock("elite_mob_essence_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f)));
 
-
-
-
-
+    public static final RegistryObject<Block> SOLID_LIGHTNING_WATER_BLOCK = registerBlock("solid_lightning_water_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).sound(SoundType.GLASS)));
 
 
 

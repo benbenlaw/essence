@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "essence:lightning_water_source",
+    "essence:lightning_water_flowing"
+  ]
+}

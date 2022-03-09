@@ -2,7 +2,10 @@ package com.benbenlaw.essence;
 
 import com.benbenlaw.essence.block.ModBlocks;
 import com.benbenlaw.essence.config.ConfigFile;
+import com.benbenlaw.essence.fluid.ModFluids;
 import com.benbenlaw.essence.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -36,6 +39,7 @@ public class Essence {
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        ModFluids.register(eventBus);
 
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -73,6 +77,13 @@ public class Essence {
                 collect(Collectors.toList()));
     }
     private void doClientStuff(final FMLClientSetupEvent event) {
-        // do something that can only be done on the client
+
+        event.enqueueWork(() -> {
+
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.LIGHTNING_WATER_BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.LIGHTNING_WATER_SOURCE.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.LIGHTNING_WATER_FLOWING.get(), RenderType.translucent());
+
+        });
     }
 }
