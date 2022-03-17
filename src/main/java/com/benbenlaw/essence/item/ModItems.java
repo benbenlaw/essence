@@ -28,6 +28,9 @@ public class ModItems {
     public static final RegistryObject<Item> SPAWNER_SHARD = ITEMS.register("spawner_shard", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
 
+    public static final RegistryObject<Item> SPAWNER_SHARD_EXTRACTOR = ITEMS.register("spawner_shard_extractor", () -> new Item(
+            new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
+
     public static final RegistryObject<Item> LIGHTNING_SUMMONER = ITEMS.register("lighning_summoner", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.ESSENCE).stacksTo(1)));
 

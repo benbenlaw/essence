@@ -5,48 +5,33 @@ import com.benbenlaw.essence.block.ModBlocks;
 import com.benbenlaw.essence.config.ConfigFile;
 import com.benbenlaw.essence.fluid.ModFluids;
 import com.benbenlaw.essence.item.ModItems;
-import net.minecraft.advancements.critereon.ItemUsedOnBlockTrigger;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.tags.FluidTags;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.entity.AreaEffectCloud;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.LightningBolt;
-import net.minecraft.world.entity.boss.enderdragon.EnderDragon;
+import net.minecraft.core.Position;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.alchemy.PotionUtils;
-import net.minecraft.world.item.alchemy.Potions;
-import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.gameevent.GameEvent;
-import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.material.Fluids;
-import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.ticks.LevelTicks;
 import net.minecraftforge.common.Tags;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.event.entity.EntityJoinWorldEvent;
+import net.minecraftforge.event.entity.item.ItemTossEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import org.w3c.dom.css.Counter;
 
 @Mod.EventBusSubscriber(modid = Essence.MOD_ID)
 public class ModEvents {
 
-//All Ores Drop Essence
+    //All Ores Drop Essence
     @SubscribeEvent
     public static void allOreChance(BlockEvent.BreakEvent event) {
         if (!event.getPlayer().level.isClientSide()) {
@@ -63,7 +48,7 @@ public class ModEvents {
         }
     }
 
-//Lightning Water
+    //Lightning Water
     @SubscribeEvent
     public static void lightningWaterFromLightningSummonerItem(PlayerInteractEvent.RightClickBlock event) {
         BlockPos blockPos = event.getPos();
@@ -84,7 +69,8 @@ public class ModEvents {
         }
     }
 
-//Mob Drops
+
+    //Mob Drops
     @SubscribeEvent
     public static void addMobEssenceToMobs(LivingDeathEvent event) {
 
@@ -98,7 +84,43 @@ public class ModEvents {
         }
     }
 
+    //Spawner Shards
+    @SubscribeEvent
+    public static void spawnerShards(PlayerInteractEvent.RightClickBlock event) {
+
+        BlockPos blockPos = event.getPos();
+        BlockState blockState = event.getWorld().getBlockState(blockPos);
+        Level world = event.getWorld();
+
+        if (event.getPlayer().getMainHandItem().is(ModItems.SPAWNER_SHARD_EXTRACTOR.get())) {
+            if (blockState.is(Blocks.SPAWNER)) {
+
+                world.setBlock(blockPos, Blocks.AIR.defaultBlockState(), 1);{
+
+                    if (Math.random() > ConfigFile.spawnerShardChance.get()) {
+                        world.addFreshEntity(new ItemEntity(world, blockPos.getX(), blockPos.getY(), blockPos.getZ(),
+                                new ItemStack(ModItems.SPAWNER_SHARD.get())));
+                    }
+                }
+            }
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -117,7 +139,7 @@ public class ModEvents {
                 if (Math.random() > ConfigFile.basicOreEssenceChance.get()) {
 
                     world.addFreshEntity(new ItemEntity(world, blockPos.getX(), blockPos.getY(), blockPos.getZ(),
-                            new ItemStack(ModItems.BASIC_MOB_ESSENCE.get())));
+                            new ItemStack(ModItems.BASIC_ORE_ESSENCE.get())));
                 }
         }
     }

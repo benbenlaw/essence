@@ -7,14 +7,14 @@
   ],
   "key": {
     "X": {
-      "item": "essence:advanced_mob_essence"
+      "item": "essence:elite_mob_essence"
     },
     "I": {
-      "item": "minecraft:blaze_rod"
+      "item": "minecraft:wither_skeleton_skull"
     }
   },
   "result": {
-    "item": "minecraft:blaze_rod",
-    "count": 3
+    "item": "minecraft:wither_skeleton_skull",
+    "count": 2
   }
 }
