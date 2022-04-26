@@ -45,6 +45,10 @@ public class ModItems {
     public static final RegistryObject<Item> ELITE_ORE_ESSENCE = ITEMS.register("elite_ore_essence", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
 
+    public static final RegistryObject<Item> ESSENCE_CONVERTER = ITEMS.register("essence_converter", () -> new Item(
+            new Item.Properties().tab(ModCreativeModTab.ESSENCE).durability(64)));
+
+
     public static final RegistryObject<Item> LIGHTNING_WATER_BUCKET = ITEMS.register("lightning_water_bucket", () -> new BucketItem(
             () -> ModFluids.LIGHTNING_WATER_SOURCE.get(),
             new Item.Properties().tab(ModCreativeModTab.ESSENCE).stacksTo(1)));

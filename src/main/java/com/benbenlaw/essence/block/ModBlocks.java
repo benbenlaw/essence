@@ -1,6 +1,7 @@
 package com.benbenlaw.essence.block;
 
 import com.benbenlaw.essence.Essence;
+import com.benbenlaw.essence.block.custom.EssenceConverterBlock;
 import com.benbenlaw.essence.item.ModCreativeModTab;
 import com.benbenlaw.essence.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
@@ -41,6 +42,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOLID_LIGHTNING_WATER_BLOCK = registerBlock("solid_lightning_water_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).sound(SoundType.GLASS)));
 
+    public static final RegistryObject<Block> ESSENCE_CONVERTER_BLOCK = registerBlock("essence_converter_block",
+            () -> new EssenceConverterBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3f).sound(SoundType.GLASS)));
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
