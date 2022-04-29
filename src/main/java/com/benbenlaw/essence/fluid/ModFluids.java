@@ -35,7 +35,7 @@ public class ModFluids {
 
     public static final ForgeFlowingFluid.Properties LIGHTNING_WATER_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> LIGHTNING_WATER_SOURCE.get(), () -> LIGHTNING_WATER_FLOWING.get(), FluidAttributes.builder(WATER_STILL_RL, WATER_FLOWING_RL)
-            .density(15).luminosity(5).viscosity(3).sound(SoundEvents.BUBBLE_COLUMN_BUBBLE_POP).overlay(WATER_OVERLAY_RL)
+            .density(15).luminosity(5).viscosity(3).overlay(WATER_OVERLAY_RL)//.sound(SoundEvents.BUBBLE_COLUMN_BUBBLE_POP)
             .color(0xbffed0d0)).slopeFindDistance(2).levelDecreasePerBlock(2)
             .block(() -> ModFluids.LIGHTNING_WATER_BLOCK.get()).bucket(() -> ModItems.LIGHTNING_WATER_BUCKET.get());
 

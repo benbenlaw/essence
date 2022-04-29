@@ -31,7 +31,7 @@ public class ModBlocks {
 //New Blocks
 
     public static final RegistryObject<Block> BASIC_MOB_ESSENCE_BLOCK = registerBlock("basic_mob_essence_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(2f)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.DIRT).strength(2f)));
 
     public static final RegistryObject<Block> ADVANCED_MOB_ESSENCE_BLOCK = registerBlock("advanced_mob_essence_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(2.5f)));
@@ -43,8 +43,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).sound(SoundType.GLASS)));
 
     public static final RegistryObject<Block> ESSENCE_CONVERTER_BLOCK = registerBlock("essence_converter_block",
-            () -> new EssenceConverterBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3f).sound(SoundType.GLASS)));
-
+            () -> new EssenceConverterBlock(BlockBehaviour.Properties.of(Material.DIRT).strength(3f).sound(SoundType.GLASS)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
