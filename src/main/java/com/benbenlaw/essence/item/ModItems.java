@@ -2,6 +2,8 @@ package com.benbenlaw.essence.item;
 
 import com.benbenlaw.essence.Essence;
 import com.benbenlaw.essence.fluid.ModFluids;
+import com.benbenlaw.essence.item.custom.LightningSummonerItem;
+import com.benbenlaw.essence.item.custom.SpawnerShardExtractorItem;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -28,11 +30,11 @@ public class ModItems {
     public static final RegistryObject<Item> SPAWNER_SHARD = ITEMS.register("spawner_shard", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
 
-    public static final RegistryObject<Item> SPAWNER_SHARD_EXTRACTOR = ITEMS.register("spawner_shard_extractor", () -> new Item(
-            new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
+    public static final RegistryObject<Item> SPAWNER_SHARD_EXTRACTOR = ITEMS.register("spawner_shard_extractor", () -> new SpawnerShardExtractorItem(
+            new Item.Properties().tab(ModCreativeModTab.ESSENCE).stacksTo(1).durability(16)));
 
-    public static final RegistryObject<Item> LIGHTNING_SUMMONER = ITEMS.register("lighning_summoner", () -> new Item(
-            new Item.Properties().tab(ModCreativeModTab.ESSENCE).stacksTo(1)));
+    public static final RegistryObject<Item> LIGHTNING_SUMMONER = ITEMS.register("lightning_summoner", () -> new LightningSummonerItem(
+            new Item.Properties().tab(ModCreativeModTab.ESSENCE).stacksTo(1).durability(16)));
 
 
 

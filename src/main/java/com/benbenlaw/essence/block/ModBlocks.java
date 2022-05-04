@@ -4,9 +4,14 @@ import com.benbenlaw.essence.Essence;
 import com.benbenlaw.essence.block.custom.EssenceConverterBlock;
 import com.benbenlaw.essence.item.ModCreativeModTab;
 import com.benbenlaw.essence.item.ModItems;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.SoundType;
@@ -18,7 +23,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -40,10 +47,36 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f)));
 
     public static final RegistryObject<Block> SOLID_LIGHTNING_WATER_BLOCK = registerBlock("solid_lightning_water_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).sound(SoundType.GLASS)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).sound(SoundType.GLASS)),
+            "tooltip.essence.block.solid_lightning_water_block");
 
     public static final RegistryObject<Block> ESSENCE_CONVERTER_BLOCK = registerBlock("essence_converter_block",
             () -> new EssenceConverterBlock(BlockBehaviour.Properties.of(Material.DIRT).strength(3f).sound(SoundType.GLASS)));
+
+
+
+
+    private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, String tooltipKey) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerBlockItem(name, toReturn, tooltipKey);
+        return toReturn;
+    }
+
+    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block, String tooltipKey) {
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
+                new Item.Properties().tab(ModCreativeModTab.ESSENCE)){
+            @Override
+            public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                pTooltip.add(new TranslatableComponent(tooltipKey));
+            }
+        });
+
+    }
+
+
+
+
+
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -56,6 +89,8 @@ public class ModBlocks {
                 new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
 
     }
+
+
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

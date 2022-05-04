@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "essence:block/essence_converter_top",
+    "front": "essence:block/essence_converter_front",
+    "side": "essence:block/essence_converter_front"
+  }
+}

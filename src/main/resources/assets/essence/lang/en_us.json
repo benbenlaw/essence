@@ -10,14 +10,23 @@
   "item.essence.activated_spawner_shard": "Activated Spawner Shard",
   "item.essence.spawner_shard": "Spawner Shard",
   "item.essence.lightning_water_bucket": "Lightning Water Bucket",
-
+  "item.essence.spawner_shard_extractor": "Spawner Shard Extractor",
+  "item.essence.essence_converter": "Essence Converter",
+  "item.essence.lightning_summoner": "Lightning Summoner",
 
   "block.essence.basic_mob_essence_block": "Basic Mob Essence Block",
   "block.essence.advanced_mob_essence_block": "Advanced Mob Essence Block",
   "block.essence.elite_mob_essence_block": "Elite Mob Essence Block",
   "block.essence.solid_lightning_water_block": "Solid Lightning Water Block",
+  "block.essence.essence_converter_block": "Essence Converter Block",
 
-  "fluid.essence.lightning_water": "Lighting Water",
+  "fluid.essence.lightning_water_source": "Lightning Water",
 
-  "itemGroup.essence": "Essence"
+  "itemGroup.essence": "Essence",
+
+  "tooltip.essence.lightning_summoner.tooltip.shift": "Right click on a solid lightning water block to create lightning water!",
+  "tooltip.essence.lightning_summoner.tooltip": "Press §eSHIFT§r for more Information!",
+  "tooltip.essence.block.solid_lightning_water_block": "Right click on this with a lightning summoner to create lightning water!",
+  "tooltip.essence.spawner_shard_extractor.tooltip.shift": "Right clicking on a spawner will break the block with a chance to get spawner shards",
+  "tooltip.essence.spawner_shard_extractor.tooltip": "Press §eSHIFT§r for more Information!"
 }

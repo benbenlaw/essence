@@ -28,6 +28,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import org.w3c.dom.css.Counter;
 
+import java.util.Random;
+
 @Mod.EventBusSubscriber(modid = Essence.MOD_ID)
 public class ModEvents {
 
@@ -84,7 +86,6 @@ public class ModEvents {
         }
     }
 
-    //Spawner Shards
     @SubscribeEvent
     public static void spawnerShards(PlayerInteractEvent.RightClickBlock event) {
 
@@ -95,16 +96,21 @@ public class ModEvents {
         if (event.getPlayer().getMainHandItem().is(ModItems.SPAWNER_SHARD_EXTRACTOR.get())) {
             if (blockState.is(Blocks.SPAWNER)) {
 
+                event.getPlayer().getMainHandItem().hurt(1, new Random(), null);
+
                 world.setBlock(blockPos, Blocks.AIR.defaultBlockState(), 1);{
 
                     if (Math.random() > ConfigFile.spawnerShardChance.get()) {
                         world.addFreshEntity(new ItemEntity(world, blockPos.getX(), blockPos.getY(), blockPos.getZ(),
                                 new ItemStack(ModItems.SPAWNER_SHARD.get())));
+                        world.addFreshEntity((new ExperienceOrb(
+                                world, blockPos.getX(), blockPos.getY(), blockPos.getZ(), 10)));
                     }
                 }
             }
         }
     }
+
 }
 
 

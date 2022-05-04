@@ -1,0 +1,14 @@
+Essence Changelog
+
+Fixed not launching in forge
+Add xp dropping from spawner shard extractor when the shards spawn
+Added remaining missing textures
+Adjusted advanced and elite block textures
+Spawner extractor now has durability and recipe
+Lightning summer has durability, recipean and name is fixed (this will remove old version of the item)
+Essence converter now converts ore essence to mob essence
+Tooltips added to some of the items in the mod
+
+
+
+

@@ -2,8 +2,7 @@
   "type": "essence:essence_converter",
   "ingredients": [
     {
-      "item": "essence:basic_ore_essence",
-      "count": 3
+      "item": "essence:advanced_mob_essence"
     }
   ],
   "output": {
