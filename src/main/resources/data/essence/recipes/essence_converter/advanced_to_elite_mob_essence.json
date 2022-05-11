@@ -1,0 +1,11 @@
+{
+  "type": "essence:essence_converter",
+  "ingredients": [
+    {
+      "item": "essence:advanced_mob_essence_block"
+    }
+  ],
+  "output": {
+    "item": "essence:elite_mob_essence"
+  }
+}

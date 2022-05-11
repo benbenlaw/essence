@@ -5,10 +5,19 @@ Add xp dropping from spawner shard extractor when the shards spawn
 Added remaining missing textures
 Adjusted advanced and elite block textures
 Spawner extractor now has durability and recipe
-Lightning summer has durability, recipean and name is fixed (this will remove old version of the item)
+Lightning summer has durability, recipe and name is fixed (this will remove old version of the item)
 Essence converter now converts ore essence to mob essence
-Tooltips added to some of the items in the mod
+Tooltips added to some items in the mod
 
+(6.0)
 
+Mob essence blocks more only require 8 essence instead of 9 to make blocks
+Added essence block converter recipe
+Added ore essence blocks
+Basic ore and basic mob essence now have tooltips with information
+Spider spawn egg recipe working now
+Essence converter can convert one block to the next higher tier of essence
+Essence converter outputs now correct amount
+Various block to essence and essence to block crafting recipes added
 
 

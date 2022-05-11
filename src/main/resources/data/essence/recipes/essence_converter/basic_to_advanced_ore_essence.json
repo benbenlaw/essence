@@ -1,0 +1,11 @@
+{
+  "type": "essence:essence_converter",
+  "ingredients": [
+    {
+      "item": "essence:basic_ore_essence_block"
+    }
+  ],
+  "output": {
+    "item": "essence:advanced_ore_essence"
+  }
+}

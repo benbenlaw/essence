@@ -2,7 +2,7 @@ package com.benbenlaw.essence.screen;
 
 import com.benbenlaw.essence.block.ModBlocks;
 import com.benbenlaw.essence.block.entity.custom.EssenceConverterBlockEntity;
-import com.benbenlaw.essence.config.ConfigFile;
+import com.benbenlaw.essence.screen.slot.LightningBucketInputSlot;
 import com.benbenlaw.essence.screen.slot.ModResultSlot;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
@@ -36,7 +36,7 @@ public class EssenceConverterBlockMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(handler -> {
-            this.addSlot(new SlotItemHandler(handler, 0, 34, 40));
+            this.addSlot(new LightningBucketInputSlot(handler, 0, 34, 40));
             this.addSlot(new SlotItemHandler(handler, 1, 57, 18));
             this.addSlot(new SlotItemHandler(handler, 2, 103, 18));
             this.addSlot(new ModResultSlot(handler, 3, 80, 60));

@@ -17,12 +17,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.alchemy.PotionUtils;
-import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
@@ -189,7 +185,7 @@ public class EssenceConverterBlockEntity extends BlockEntity implements MenuProv
 
 
             entity.itemHandler.setStackInSlot(3, new ItemStack(match.get().getResultItem().getItem(),
-                    entity.itemHandler.getStackInSlot(3).getCount() + 8));
+                    entity.itemHandler.getStackInSlot(3).getCount() + 1));
 
             entity.resetProgress();
         }

@@ -46,6 +46,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> ELITE_MOB_ESSENCE_BLOCK = registerBlock("elite_mob_essence_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f)));
 
+    public static final RegistryObject<Block> BASIC_ORE_ESSENCE_BLOCK = registerBlock("basic_ore_essence_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.DIRT).strength(2f)));
+
+    public static final RegistryObject<Block> ADVANCED_ORE_ESSENCE_BLOCK = registerBlock("advanced_ore_essence_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(2.5f)));
+
+    public static final RegistryObject<Block> ELITE_ORE_ESSENCE_BLOCK = registerBlock("elite_ore_essence_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f)));
+
     public static final RegistryObject<Block> SOLID_LIGHTNING_WATER_BLOCK = registerBlock("solid_lightning_water_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).sound(SoundType.GLASS)),
             "tooltip.essence.block.solid_lightning_water_block");

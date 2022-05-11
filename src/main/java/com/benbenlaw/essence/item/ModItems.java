@@ -3,6 +3,8 @@ package com.benbenlaw.essence.item;
 import com.benbenlaw.essence.Essence;
 import com.benbenlaw.essence.fluid.ModFluids;
 import com.benbenlaw.essence.item.custom.LightningSummonerItem;
+import com.benbenlaw.essence.item.custom.MobEssenceItem;
+import com.benbenlaw.essence.item.custom.OreEssenceItem;
 import com.benbenlaw.essence.item.custom.SpawnerShardExtractorItem;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
@@ -15,7 +17,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Essence.MOD_ID);
 
-    public static final RegistryObject<Item> BASIC_MOB_ESSENCE = ITEMS.register("basic_mob_essence", () -> new Item(
+    public static final RegistryObject<Item> BASIC_MOB_ESSENCE = ITEMS.register("basic_mob_essence", () -> new MobEssenceItem(
             new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
 
     public static final RegistryObject<Item> ADVANCED_MOB_ESSENCE = ITEMS.register("advanced_mob_essence", () -> new Item(
@@ -38,7 +40,7 @@ public class ModItems {
 
 
 
-    public static final RegistryObject<Item> BASIC_ORE_ESSENCE = ITEMS.register("basic_ore_essence", () -> new Item(
+    public static final RegistryObject<Item> BASIC_ORE_ESSENCE = ITEMS.register("basic_ore_essence", () -> new OreEssenceItem(
             new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
 
     public static final RegistryObject<Item> ADVANCED_ORE_ESSENCE = ITEMS.register("advanced_ore_essence", () -> new Item(
