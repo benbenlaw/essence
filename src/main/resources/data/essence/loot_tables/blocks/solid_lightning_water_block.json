@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "essence:essence_converter"
+          "name": "essence:solid_lightning_water_block"
         }
       ],
       "conditions": [

@@ -1,3 +1,6 @@
 {
-  "parent": "essence:block/advanced_ore_essence_block"
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "essence:block/advanced_ore_essence_block"
+  }
 }

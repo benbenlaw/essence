@@ -17,7 +17,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 group = 'com.benbenlaw.essence'
-version = '1.18.2-7.1'
+version = '1.18.2-7.2'
 
 java {
     archivesBaseName = 'essence'

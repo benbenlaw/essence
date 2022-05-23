@@ -96,7 +96,9 @@ public class ModEvents {
         if (event.getPlayer().getMainHandItem().is(ModItems.SPAWNER_SHARD_EXTRACTOR.get())) {
             if (blockState.is(Blocks.SPAWNER)) {
 
-                event.getPlayer().getMainHandItem().hurt(1, new Random(), null);
+                event.getPlayer().getMainHandItem().hurtAndBreak(1, event.getPlayer(),(p_41303_) -> {
+                    p_41303_.broadcastBreakEvent(event.getHand());
+                });
 
                 world.setBlock(blockPos, Blocks.AIR.defaultBlockState(), 1);{
 
