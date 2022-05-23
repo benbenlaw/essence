@@ -1,5 +1,9 @@
 Essence Changelog
 
+(7.2)
+
+Spawner extract now breaks when durability reaches 0
+
 (7.1)
 
 New blocks drop items now
