@@ -5,12 +5,20 @@ import com.benbenlaw.essence.block.ModBlocks;
 import com.benbenlaw.essence.config.ConfigFile;
 import com.benbenlaw.essence.fluid.ModFluids;
 import com.benbenlaw.essence.item.ModItems;
+import net.minecraft.advancements.critereon.PlayerHurtEntityTrigger;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Position;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.EnchantedBookItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -39,14 +47,17 @@ public class ModEvents {
         if (!event.getPlayer().level.isClientSide()) {
             BlockPos blockPos = event.getPos(); //          Block block = event.getState().getBlock();
             Level world = (Level) event.getWorld();
+            ItemStack item = event.getPlayer().getItemInHand(InteractionHand.MAIN_HAND);
+            int level = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, item);
 
-            if (event.getState().is(Tags.Blocks.ORES))  //CHANGE TO ORES
-                if (Math.random() > ConfigFile.allOresChance.get()) {
+            if (level < 1) {
+                if (event.getState().is(Tags.Blocks.ORES))  //CHANGE TO ORES
+                    if (Math.random() > ConfigFile.allOresChance.get()) {
+                        world.addFreshEntity(new ItemEntity(world, blockPos.getX(), blockPos.getY(), blockPos.getZ(),
+                                new ItemStack(ModItems.BASIC_ORE_ESSENCE.get())));
+                    }
 
-                    world.addFreshEntity(new ItemEntity(world, blockPos.getX(), blockPos.getY(), blockPos.getZ(),
-                            new ItemStack(ModItems.BASIC_ORE_ESSENCE.get())));     //event.getPlayer().addItem(new ItemStack(ModItems.ADVANCED_MOB_ESSENCE.get().asItem()));  //event.getPlayer().setSecondsOnFire(3);
-                    //new ItemStack(ModItems.BASIC_ORE_ESSENCE.get())));
-                }
+            }
         }
     }
 
@@ -78,8 +89,11 @@ public class ModEvents {
 
         Vec3 entityPos = event.getEntity().position();
         Level world = event.getEntity().getLevel();
+        Entity e = event.getEntity();
 
-        if (Math.random() > ConfigFile.mobEssenceChance.get()) {
+        if (e instanceof ServerPlayer) {}
+
+        else if (Math.random() > ConfigFile.mobEssenceChance.get()) {
 
             world.addFreshEntity(new ItemEntity(world, entityPos.x(), entityPos.y(), entityPos.z(),
                     new ItemStack(ModItems.BASIC_MOB_ESSENCE.get())));

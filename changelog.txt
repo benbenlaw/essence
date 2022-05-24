@@ -1,5 +1,10 @@
 Essence Changelog
 
+(7.3)
+
+Players no longer drop essence on death
+Silk touching ore blocks no longer drops ore essence
+
 (7.2)
 
 Spawner extract now breaks when durability reaches 0
