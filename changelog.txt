@@ -1,5 +1,9 @@
 Essence Changelog
 
+(7.4)
+
+Added and removed a few essence recipes
+
 (7.3)
 
 Players no longer drop essence on death
