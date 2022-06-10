@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+    	"north": "essence:block/essence_converter_block",
+    	"east": "essence:block/essence_converter_side",
+    	"south": "essence:block/essence_converter_side",
+    	"west": "essence:block/essence_converter_side",
+    	"up": "essence:block/essence_converter_top",
+    	"down": "essence:block/essence_converter_bottom",
+    	"particle": "essence:block/essence_converter_block"
+    }
+}

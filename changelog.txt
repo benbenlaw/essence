@@ -1,5 +1,18 @@
 Essence Changelog
 
+(8.0)
+
+OLD ESSENCE CONVERTER REMOVED MAKE SURE YOU TAKE YOUR OLD STUFF OUT
+
+Added lightning infuser, turn solide lightning water blocks into lightning water
+Removed a lot of old code relating to the old essence converter
+Disabled essences JEI integration
+Custom Machinery now a dependency
+Essence converter completely changed, Recipes the same but require certain amounts of fluids instead
+Essence converter recipe changed to use redstone and diamond instead of advanced and elite materials
+
+
+
 (7.4)
 
 Added and removed a few essence recipes

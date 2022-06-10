@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+    	"north": "essence:block/lightning_infuser_block",
+    	"east": "essence:block/lightning_infuser_side",
+    	"south": "essence:block/lightning_infuser_side",
+    	"west": "essence:block/lightning_infuser_side",
+    	"up": "essence:block/lightning_infuser_top",
+    	"down": "essence:block/lightning_infuser_bottom",
+    	"particle": "essence:block/lightning_infuser_block"
+    }
+}

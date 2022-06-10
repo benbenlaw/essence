@@ -1,0 +1,103 @@
+{
+  "name": "Essence Converter",
+  "appearance": {
+    "lightmode": "running",
+    "lightlevel": 0,
+    "block": "essence:machine/essence_converter"
+  },
+  "components": [
+  	{
+	  "type": "custommachinery:redstone",
+	  "power": 1
+	},
+	{
+      "mode": "input",
+      "id": "input1",
+      "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["essence:essence_converter"],
+	  "whitelist": false
+    }, 	
+	{
+      "mode": "input",
+      "id": "input2",
+      "capacity": 1,
+      "type": "custommachinery:item",
+	  "filter": ["essence:essence_converter"],
+	  "whitelist": true
+    }, 	
+	{
+      "mode": "input",
+      "id": "fluid1",
+      "capacity": 8000,
+      "type": "custommachinery:fluid"
+    },    
+    {
+      "mode": "output",
+      "id": "output1",
+	  "capacity": 64,
+      "type": "custommachinery:item"
+    }	
+  ],
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 38,
+      "y": 0,
+	  "width": 180,
+      "type": "custommachinery:texture"
+    },
+	
+    {
+      "x": 47,
+      "y": 85,
+      "type": "custommachinery:player_inventory"
+    },
+	{
+	  "type": "custommachinery:reset",
+      "x": 166,
+      "y": 7
+    },
+    {
+      "x": 96,
+      "y": 18,
+      "type": "custommachinery:slot",
+      "id": "input1"
+    },  	    
+	{
+      "x": 142,
+      "y": 18,
+      "type": "custommachinery:slot",
+      "id": "input2"
+    },  	    
+	{
+      "x": 65,
+      "y": 25,
+      "type": "custommachinery:fluid",
+      "id": "fluid1"
+    },  	
+    {
+      "id": "output1",
+      "x": 119,
+      "y": 60,
+      "type": "custommachinery:slot"
+    }, 
+    {
+      "x": 119,
+      "y": 33,
+      "type": "custommachinery:progress",
+	  "direction": "bottom"
+    },
+    {
+      "x": 200,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+	{
+      "text": "Essence Converter",
+      "x": 43,
+      "y": 7,
+      "type": "custommachinery:text"
+    }
+  ]
+}

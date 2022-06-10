@@ -50,7 +50,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlock(ModBlocks.BASIC_ORE_ESSENCE_BLOCK.get());
         simpleBlock(ModBlocks.BASIC_MOB_ESSENCE_BLOCK.get());
 
-        simpleBlock(ModBlocks.ESSENCE_CONVERTER_BLOCK.get());
         simpleBlock(ModBlocks.SOLID_LIGHTNING_WATER_BLOCK.get());
     }
 

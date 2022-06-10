@@ -19,7 +19,6 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.ADVANCED_ORE_ESSENCE_BLOCK.get());
         this.dropSelf(ModBlocks.BASIC_ORE_ESSENCE_BLOCK.get());
         this.dropSelf(ModBlocks.ELITE_ORE_ESSENCE_BLOCK.get());
-        this.dropSelf(ModBlocks.ESSENCE_CONVERTER_BLOCK.get());
         this.dropSelf(ModBlocks.SOLID_LIGHTNING_WATER_BLOCK.get());
     }
 

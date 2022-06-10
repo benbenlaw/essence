@@ -10,10 +10,10 @@
       "item": "essence:basic_mob_essence"
     },
     "A": {
-      "item": "essence:advanced_mob_essence"
+      "item": "minecraft:redstone"
     },
     "E": {
-      "item": "essence:elite_mob_essence"
+      "item": "minecraft:diamond"
     }
   },
   "result": {

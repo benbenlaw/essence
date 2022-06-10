@@ -1,14 +1,10 @@
 package com.benbenlaw.essence;
 
 import com.benbenlaw.essence.block.ModBlocks;
-import com.benbenlaw.essence.block.entity.ModBlockEntities;
 import com.benbenlaw.essence.config.ConfigFile;
 import com.benbenlaw.essence.fluid.ModFluids;
 import com.benbenlaw.essence.item.ModItems;
 import com.benbenlaw.essence.recipe.ModRecipes;
-import com.benbenlaw.essence.screen.EssenceConverterBlockScreen;
-import com.benbenlaw.essence.screen.ModMenuTypes;
-import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -45,8 +41,6 @@ public class Essence {
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         ModFluids.register(eventBus);
-        ModBlockEntities.register(eventBus);
-        ModMenuTypes.register(eventBus);
         ModRecipes.register(eventBus);
 
         eventBus.addListener(this::setup);
@@ -91,8 +85,6 @@ public class Essence {
         ItemBlockRenderTypes.setRenderLayer(ModFluids.LIGHTNING_WATER_BLOCK.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModFluids.LIGHTNING_WATER_SOURCE.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModFluids.LIGHTNING_WATER_FLOWING.get(), RenderType.translucent());
-
-        MenuScreens.register(ModMenuTypes.ESSENCE_CONVERTER_BLOCK_MENU.get(), EssenceConverterBlockScreen::new);
 
         });
     }

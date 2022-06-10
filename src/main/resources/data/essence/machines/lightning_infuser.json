@@ -1,0 +1,74 @@
+{
+  "name": "Lightning Infuser",
+  "appearance": {
+    "lightmode": "running",
+    "lightlevel": 0,
+    "block": "essence:machine/lightning_infuser"
+  },
+  "components": [
+  	{
+	  "type": "custommachinery:redstone",
+	  "power": 1
+	},
+	{
+      "mode": "input",
+      "id": "input1",
+      "capacity": 64,
+      "type": "custommachinery:item"
+    },    
+    {
+      "mode": "output",
+      "id": "output1",
+	  "capacity": 8000,
+      "type": "custommachinery:fluid"
+    }	
+  ],
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 38,
+      "y": 0,
+	  "width": 180,
+      "type": "custommachinery:texture"
+    },
+	
+    {
+      "x": 47,
+      "y": 85,
+      "type": "custommachinery:player_inventory"
+    },
+	{
+	  "type": "custommachinery:reset",
+      "x": 166,
+      "y": 7
+    },
+    {
+      "x": 83,
+      "y": 37,
+      "type": "custommachinery:slot",
+      "id": "input1"
+    },  	
+    {
+      "id": "output1",
+      "x": 155,
+      "y": 25,
+      "type": "custommachinery:fluid"
+    }, 
+    {
+      "x": 117,
+      "y": 37,
+      "type": "custommachinery:progress"
+    },
+    {
+      "x": 200,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+	{
+      "text": "Lightning Infuser",
+      "x": 43,
+      "y": 7,
+      "type": "custommachinery:text"
+    }
+  ]
+}

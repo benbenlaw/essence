@@ -50,7 +50,9 @@ public class ModItems {
             new Item.Properties().tab(ModCreativeModTab.ESSENCE)));
 
     public static final RegistryObject<Item> ESSENCE_CONVERTER = ITEMS.register("essence_converter", () -> new Item(
-            new Item.Properties().tab(ModCreativeModTab.ESSENCE).durability(64)));
+            new Item.Properties().tab(ModCreativeModTab.ESSENCE)
+                    .durability(64)
+                     ));
 
 
     public static final RegistryObject<Item> LIGHTNING_WATER_BUCKET = ITEMS.register("lightning_water_bucket", () -> new BucketItem(

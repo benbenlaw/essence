@@ -14,7 +14,8 @@
     }
   },
   "result": {
-    "item": "essence:essence_converter_block",
+    "item": "custommachinery:custom_machine_item",
+    "nbt": "{\"machine\":\"essence:essence_converter\"}",
     "count": 1
   }
 }

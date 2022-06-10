@@ -10,10 +10,10 @@
       "item": "essence:basic_ore_essence"
     },
     "A": {
-      "item": "essence:advanced_ore_essence"
+      "item": "minecraft:redstone"
     },
     "E": {
-      "item": "essence:elite_ore_essence"
+      "item": "minecraft:diamond"
     }
   },
   "result": {

@@ -17,7 +17,6 @@ public class ModBlockStatesProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        simpleBlock(ModBlocks.ESSENCE_CONVERTER_BLOCK.get());
         simpleBlock(ModBlocks.BASIC_MOB_ESSENCE_BLOCK.get());
         simpleBlock(ModBlocks.BASIC_ORE_ESSENCE_BLOCK.get());
         simpleBlock(ModBlocks.ADVANCED_MOB_ESSENCE_BLOCK.get());
