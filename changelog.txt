@@ -4,7 +4,7 @@ Essence Changelog
 
 OLD ESSENCE CONVERTER REMOVED MAKE SURE YOU TAKE YOUR OLD STUFF OUT
 
-Added lightning infuser, turn solide lightning water blocks into lightning water
+Added lightning infuser, turn solid lightning water blocks into lightning water
 Removed a lot of old code relating to the old essence converter
 Disabled essences JEI integration
 Custom Machinery now a dependency

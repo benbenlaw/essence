@@ -1,0 +1,40 @@
+{
+    "type": "custommachinery:custom_machine",
+    "machine": "essence:essence_converter",
+    "time": 80,
+    "requirements": [
+    {
+        "type": "custommachinery:item",
+        "mode": "input",
+		"slot": "input1",
+        "item": "essence:advanced_ore_essence",
+        "amount": 1
+    },    
+	{
+        "type": "custommachinery:item",
+        "mode": "input",
+		"slot": "input2",
+        "item": "essence:essence_converter",
+        "amount": 1,
+		"chance": 0.0
+    },
+	{
+		"type": "custommachinery:fluid",
+		"mode": "input",
+		"fluid": "essence:lightning_water_source",
+		"amount": 100
+	},
+	{
+        "type": "custommachinery:item",
+        "mode": "output",
+        "item": "essence:advanced_mob_essence",
+        "amount": 1
+    },
+	{
+		"type": "custommachinery:durability",
+		"mode": "input",
+		"item": "essence:essence_converter",
+		"amount": 1
+	}
+	]
+}
