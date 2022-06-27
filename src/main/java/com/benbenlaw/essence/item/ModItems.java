@@ -51,7 +51,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> ESSENCE_CONVERTER = ITEMS.register("essence_converter", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.ESSENCE)
-                    .durability(64)
+                    //.durability(64)
                      ));
 
 

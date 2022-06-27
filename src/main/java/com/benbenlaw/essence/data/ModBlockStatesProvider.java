@@ -5,6 +5,8 @@ import com.benbenlaw.essence.block.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.data.DataGenerator;
 
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -24,6 +26,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.ELITE_MOB_ESSENCE_BLOCK.get());
         simpleBlock(ModBlocks.ELITE_ORE_ESSENCE_BLOCK.get());
         simpleBlock(ModBlocks.SOLID_LIGHTNING_WATER_BLOCK.get());
+
 
     }
 }

@@ -23,20 +23,14 @@
 		"type": "custommachinery:fluid",
 		"mode": "input",
 		"fluid": "essence:lightning_water_source",
-		"amount": 100
+		"amount": 50
 	},
 	{
         "type": "custommachinery:item",
         "mode": "output",
         "item": "essence:elite_mob_essence",
         "amount": 1
-    },
-	{
-		"type": "custommachinery:durability",
-		"mode": "input",
-		"item": "essence:essence_converter",
-		"amount": 1
-	}
+    }
 	
 	]
 }

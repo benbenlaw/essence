@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "XIX",
+    " X "
+  ],
+  "key": {
+    "X": {
+      "item": "essence:advanced_mob_essence"
+    },
+    "I": {
+      "item": "minecraft:prismarine_shard"
+    }
+  },
+  "result": {
+    "item": "minecraft:prismarine_shard",
+    "count": 5
+  }
+}

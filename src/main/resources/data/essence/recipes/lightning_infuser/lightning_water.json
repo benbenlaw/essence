@@ -1,7 +1,7 @@
 {
     "type": "custommachinery:custom_machine",
     "machine": "essence:lightning_infuser",
-    "time": 200,
+    "time": 1600,
     "requirements": [
 	{
 		"type": "custommachinery:command",

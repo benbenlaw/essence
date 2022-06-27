@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    "E#E",
+    " E "
+  ],
+  "key": {
+    "E": {
+      "item": "essence:advanced_ore_essence"
+    },
+    "#": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "result": {
+    "item": "minecraft:amethyst_shard",
+    "count": 5
+  }
+}

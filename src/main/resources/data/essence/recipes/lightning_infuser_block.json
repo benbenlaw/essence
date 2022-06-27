@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ISI",
+    "IRI",
+    "ILI"
+  ],
+  "key": {
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "S": {
+      "item": "essence:lightning_summoner"
+    },
+    "R": {
+      "item": "minecraft:lightning_rod"
+    },
+    "L": {
+      "item": "essence:solid_lightning_water_block"
+    }
+  },
+  "result": {
+    "item": "custommachinery:custom_machine_item",
+    "nbt": "{\"machine\":\"essence:lightning_infuser\"}",
+    "count": 1
+  }
+}
