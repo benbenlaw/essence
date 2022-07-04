@@ -1,12 +1,17 @@
 Essence Changelog
 
+(8.3)
+
+Added magma cube spawn egg recipe
+Buckets now remain in crafting table after crafting recipe
+
 (8.2)
 
 Added prismarine shard and crystal recipes
 Added amethyst recipes
 Lightning water blocks inside a lightning infuser now makes 8000mb of lightning water not 1000
 Lightning water consumption in essence converter block halved for all recipes
-    (Upgrading to higher essence now only costs 100mb instead of 200mb)
+    (Upgrading to higher essence now only costs 100mb instead  of 200mb)
 
 (8.1)
 

@@ -6,8 +6,8 @@ import com.benbenlaw.essence.item.custom.LightningSummonerItem;
 import com.benbenlaw.essence.item.custom.MobEssenceItem;
 import com.benbenlaw.essence.item.custom.OreEssenceItem;
 import com.benbenlaw.essence.item.custom.SpawnerShardExtractorItem;
-import net.minecraft.world.item.BucketItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -55,9 +55,12 @@ public class ModItems {
                      ));
 
 
+
+
+
     public static final RegistryObject<Item> LIGHTNING_WATER_BUCKET = ITEMS.register("lightning_water_bucket", () -> new BucketItem(
             () -> ModFluids.LIGHTNING_WATER_SOURCE.get(),
-            new Item.Properties().tab(ModCreativeModTab.ESSENCE).stacksTo(1)));
+            new Item.Properties().tab(ModCreativeModTab.ESSENCE).stacksTo(1).craftRemainder(Items.BUCKET)));
 
 
 
