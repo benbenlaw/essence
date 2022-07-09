@@ -1,5 +1,9 @@
 Essence Changelog
 
+8.4
+
+Machine now only needs a stone pickaxe to break
+
 (8.3)
 
 Added magma cube spawn egg recipe

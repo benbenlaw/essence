@@ -3,7 +3,9 @@
   "appearance": {
     "lightmode": "running",
     "lightlevel": 0,
-    "block": "essence:machine/essence_converter"
+    "block": "essence:machine/essence_converter",
+    "tool_type": "minecraft:mineable/pickaxe",
+    "mining_level": "minecraft:needs_stone_tool"
   },
   "components": [
   	{
